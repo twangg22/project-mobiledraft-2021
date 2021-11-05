@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: "Abril Fatface", serif;
+    background: url("../images/annie-spratt-WlAXIKTIDN8-unsplash.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+/*accessibility*/ 
+.skip-to-content-link{
+    left:0px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+.skip-to-content-link{
+    background: white;
+    height:30px;
+    left:0px;
+    padding:6px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+.skip-to-content-link:focus{
+    transform: translateY(0%);
+}
+
+*:focus {
+    border: 2px solid black;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 2;
+    padding-top:30px;
+    padding-bottom:10px;
+}
+  
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex:1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    font-size: 1em;
+    text-decoration:none;
+}
+
+main p{
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+.nav-links .current{
+    background-color:white;
+    text-decoration: 2px underline;
+}
+
+/*grid*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto;
+    min-height: auto;
+    gap: 15px;
+}
+
+.item2 .item5 .item8{
+    font-size: 1em;
+    text-align: left;
+}
+
+/*footer*/
+footer {
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: min-content;
+    background-color: black;
+    color: white;
+  }
+footer p{
+    padding: auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+/*album page*/
+#albums{
+    min-height: 500px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#albums img{
+    border: 5px solid black;
+    margin: 10px;
+    width: 140px;
+    height: 140px;
+}
+
+/*movies page*/
+#movies{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#movies img{
+    border: 5px solid black;
+    margin: 10px;
+    width: 25%;
+    height: 25%;
+}
+
+/*books page*/
+#books{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#books img{
+    border: 5px solid black;
+    margin: 10px;
+    width: 25%;
+    height: 25%;
+}
